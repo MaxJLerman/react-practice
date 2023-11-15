@@ -1,0 +1,18 @@
+.container {
+  text-align: center;
+  justify-content: center;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  width: 10rem;
+  height: 10rem;
+  background-color: transparent;
+  align-self: center;
+}
+
+.header {
+  font-size: 1.5rem;
+}

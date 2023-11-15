@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: #1f1f1f;
+}
+
+.debug {
+  outline: red dashed 1px;
+
+  &.blue {
+    outline-color: blue;
+  }
+
+  &.green {
+    outline-color: green;
+  }
+}
