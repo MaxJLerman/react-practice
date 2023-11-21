@@ -1,14 +1,16 @@
 import { Input } from "../Input/Input";
 
+import styles from "./NewProject.module.scss";
+
 export const NewProject: React.FC = () => {
   return (
-    <div>
-      <menu>
+    <div className={styles.container}>
+      <menu className={styles.menu}>
         <li>
-          <button>Cancel</button>
+          <button className={styles.cancelButton}>Cancel</button>
         </li>
         <li>
-          <button>Save</button>
+          <button className={styles.saveButton}>Save</button>
         </li>
       </menu>
       <div>

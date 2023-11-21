@@ -1,9 +1,11 @@
 import { NewProject } from "./components/NewProject/NewProject";
 import { Sidebar } from "./components/Sidebar/Sidebar";
 
+import styles from "./App.module.scss";
+
 const App: React.FC = () => {
   return (
-    <main className={"h-screen my-8 flex gap-8"}>
+    <main className={styles.main}>
       <Sidebar />
       <NewProject />
     </main>

@@ -1,3 +1,5 @@
+import styles from "./Input.module.scss";
+
 interface InputProps {
   label: string;
   textarea?: boolean;
@@ -5,9 +7,13 @@ interface InputProps {
 
 export const Input: React.FC<InputProps> = ({ label, textarea = false }) => {
   return (
-    <p>
-      <label>{label}</label>
-      {textarea ? <textarea /> : <input />}
+    <p className={styles.container}>
+      <label className={styles.label}>{label}</label>
+      {textarea ? (
+        <textarea className={styles.input} />
+      ) : (
+        <input className={styles.input} />
+      )}
     </p>
   );
 };
