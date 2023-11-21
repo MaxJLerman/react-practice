@@ -1,4 +1,4 @@
-export const Sidebar = () => {
+export const Sidebar: React.FC = () => {
   return (
     <aside
       className={

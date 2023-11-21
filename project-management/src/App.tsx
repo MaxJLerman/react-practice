@@ -1,9 +1,11 @@
+import { NewProject } from "./components/NewProject/NewProject";
 import { Sidebar } from "./components/Sidebar/Sidebar";
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <main className={"h-screen my-8"}>
+    <main className={"h-screen my-8 flex gap-8"}>
       <Sidebar />
+      <NewProject />
     </main>
   );
 };
